@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# add this to a path or make this as an alias or function for your shell
+
+yq ".metadata.name + \"[\" + .kind + \".\" + .apiVersion + \"]\" + \"@\" + .metadata.namespace"
+
+# read ./README.md for the context
